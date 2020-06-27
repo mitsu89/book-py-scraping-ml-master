@@ -8,4 +8,4 @@ Pythonによるスクレイピング＆機械学習　開発テクニック　�
  - pyenv-virtualenv
  - anaconda3-2020.02
  - twnsorflow version 2.1.0
- - IDE VS Code
+ - IDE: Microsoft Visual Studio Code
