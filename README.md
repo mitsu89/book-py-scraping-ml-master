@@ -1,5 +1,5 @@
 # book-py-scraping-ml-master
-Pythonによるスクレイピング＆機械学習　開発テクニック　最新環境へ修正が目的
+Pythonによるスクレイピング＆機械学習　開発テクニック　サンプルコードを最新環境へ適応修正が目的
 
 書籍の修正点→ https://kujirahand.com/blog/go.php?740
 
