@@ -74,10 +74,11 @@ for href, title in sakuhin_list:
         # お気に入りボタンを得る --- (※8)
         e = browser.find_element_by_id("fav_add_btn")
         e.click()
+        print("| お気に入りにしました!")
         # お気に入りを取り消す場合 --- (※9)
         # e = browser.find_element_by_id("fav_remove_btn")
         # e.click()
-        print("| お気に入りにしました!")
+        # print("| お気に入りを取り消しました!")
     except:
         # お気に入りボタンがなかった時
         print("| 既にお気に入りでした.")

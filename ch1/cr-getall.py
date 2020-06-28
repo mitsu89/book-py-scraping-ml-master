@@ -71,6 +71,3 @@ if __name__ == "__main__":
     # URLを丸ごとダウンロード --- (※13)
     url = "https://docs.python.jp/3.6/library/"
     analize_html(url, url)
-
-
-
