@@ -1,13 +1,16 @@
 from scrapy.http import HtmlResponse
-from selenium.webdriver import Firefox
+from selenium.webdriver import Chrome
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-# Firefoxの初期化 --- (※1)
-driver = Firefox()
+# Chromeの初期化 --- (※1)
+browser_base = \
+    "/Users/cedar/.pyenv/versions/anaconda3-2020.02/envs/venv/lib"
+browser = browser_base + "/python3.7/site-packages/chromedriver_binary/chromedriver"
+driver = Chrome(executable_path=browser)
 
-# Firefoxで任意のURLを開く --- (※2)
+# Chromeで任意のURLを開く --- (※2)
 def selenium_get(url):
   driver.get(url)
 
@@ -18,7 +21,7 @@ def get_dom(query):
         (By.CSS_SELECTOR, query)))
     return dom
 
-# Firefoxを閉じる --- (※4)
+# Chromeを閉じる --- (※4)
 def selenium_close():
     driver.close()
 

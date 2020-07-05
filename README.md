@@ -10,3 +10,4 @@ Pythonによるスクレイピング＆機械学習　開発テクニック　
  - anaconda3-2020.02
  - twnsorflow version 2.1.0
  - IDE: Microsoft Visual Studio Code バージョン: 1.46.1
+ - web browser: Google Chrome version 83.0.4103.116（Official Build）
