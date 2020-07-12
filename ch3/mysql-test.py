@@ -4,8 +4,8 @@ import mysql.connector as MySQLdb
 # MySQLに接続する --- (※2)
 conn = MySQLdb.connect(
     user='cedar',
-    passwd='shark1977',
-    host='192.168.0.6',
+    passwd='kujira2019',
+    host='192.168.0.4',
     db='test')
 
 # カーソルを取得する --- (※3)
