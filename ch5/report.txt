@@ -1,0 +1,67 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 0 issues that require attention
+--------------------------------------------------------------------------------
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'mnist-deep.py'
+ outputting to 'mnist-deep-upgrade.py'
+--------------------------------------------------------------------------------
+
+13:5: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+14:5: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+18:13: INFO: Renamed 'tf.truncated_normal' to 'tf.random.truncated_normal'
+28:11: INFO: Added keywords to args of function 'tf.nn.conv2d'
+28:11: INFO: Renamed keyword argument for tf.nn.conv2d from filter to filters
+31:11: INFO: Added keywords to args of function 'tf.nn.max_pool'
+31:11: INFO: Renamed keyword argument for tf.nn.max_pool from value to input
+31:11: INFO: Renamed 'tf.nn.max_pool' to 'tf.nn.max_pool2d'
+35:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+35:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+42:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+42:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+46:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+46:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+52:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+52:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+56:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+56:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+64:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+64:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+65:16: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+66:16: INFO: Changing keep_prob arg of tf.nn.dropout to rate, and recomputing value.
+
+69:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+69:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+75:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+75:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+76:22: INFO: Added keywords to args of function 'tf.reduce_sum'
+76:41: INFO: Renamed 'tf.log' to 'tf.math.log'
+77:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+77:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+78:16: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+82:5: INFO: `name` passed to `name_scope`. Because you may be re-entering an existing scope, it is not safe to convert automatically,  the v2 name_scope does not support re-entering scopes by name.
+
+82:5: INFO: Renamed 'tf.name_scope' to 'tf.compat.v1.name_scope'
+83:28: INFO: Added keywords to args of function 'tf.argmax'
+83:50: INFO: Added keywords to args of function 'tf.argmax'
+84:20: INFO: Added keywords to args of function 'tf.reduce_mean'
+91:5: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+92:13: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+94:9: INFO: tf.summary.FileWriter requires manual check. The TF 1.x summary API cannot be automatically migrated to TF 2.0, so symbols have been converted to tf.compat.v1.summary.* and must be migrated manually. Typical usage will only require changes to the summary writing logic, not to individual calls like scalar(). For examples of the new summary API, see the Effective TF 2.0 migration document or check the TF 2.0 TensorBoard tutorials.
+94:9: INFO: Renamed 'tf.summary.FileWriter' to 'tf.compat.v1.summary.FileWriter'
+--------------------------------------------------------------------------------
+
